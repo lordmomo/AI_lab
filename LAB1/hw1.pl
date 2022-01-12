@@ -58,7 +58,3 @@ sister(X,Y):-parent(Z,X),parent(Z,Y),girl(X),(girl(Y);boy(Y)),X\==Y.
 cousin(X,Y):- grandparent(A,X),grandparent(A,Y),not(siblings(X,Y)),X\==Y.
 
 cousin(X,Y):- cousin(Y,X).
-
-
-
-
